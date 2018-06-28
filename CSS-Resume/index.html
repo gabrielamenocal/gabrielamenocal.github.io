@@ -15,7 +15,14 @@
 
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&Introduction &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
 
- <header>
+ <header id="about">
+
+	<nav class="">
+		<a href="#about"> About </a>
+		<a href="#work"> Work Experience </a>
+		<a href="#education"> Education </a>
+		<a href="#contact"> Contact </a>
+	</nav>
 	 	  
 	<div class="container">
 	  <div class="col-wide">			
@@ -25,18 +32,19 @@
 		
 		 <p class="content"> 
 			  <ul> 
-				  <li> 5+ years of professional experience in the telecommunications field, fiber optics, technical support and project management with customer oriented focus. </li>
-				  <li> Two years MEng. in Electrical Engineering and Computer, University of Ottawa. & four years BSc. in Telecommunication Engineer, Central American Technological University, UNITEC.  </li>
+				  <li>  5+ years of professional experience in the telecommunications field, fiber optics, technical support and project management with customer oriented focus. </li>
+				  <li>  Two years MEng. in Electrical Engineering and Computer, University of Ottawa. & four years BSc. in Telecommunication Engineer, Central American Technological University, UNITEC.  </li>
 				  <li>  University of Toronto School of Continuing Education, Coding Boot Camp: Full Stack Web development focus. (June 2018 – December 2018).	</li>
 				  <li>  Strong knowledge in Network planning, OSI model, TCP Model, BGP, OSPF, IS-IS, VLANs, VPNs, mobile communications Linux platform (mostly Ubuntu) and some virtualization tools, such as Mininet and VirtualBox. </li>
 				  <li> 	Ability to explain technical concepts in a clear and precise manner and to develop and lead technical training program sessions.	</li>
 				  <li> 	Attention to detail and precision, solid work ethics concerning meeting deadlines and reliability.	</li>
 				  <li> 	Fluent in English and Spanish, beginner level in French (2 levels in Alliance Francais Ottawa and Ecole des adultes Le Carrefour).	</li>
-			  </ul>		
+			  </ul>	
+			  <a href="resumeGabrielaMenocal.pdf" class="download" download=""> Download Resume </a>	
 		  </p>		  
 	  </div> 	 	   
 	</div>	 
-	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>  <p id="demo"></p>
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Click me to display Date and Time.</button>  <p id="time"></p>
 
   </header>
    
@@ -44,7 +52,7 @@
 
  <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Work Experience &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
    
-   <section class="work">
+   <section class="work" id="work">
 
 		<div class="container">
 
@@ -244,7 +252,7 @@
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& EDUCATION &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
   
 	 
-	  <section class="education">
+	  <section class="education" id="education">
 
 			<div class="container">
 
@@ -279,7 +287,7 @@
    </main>
 <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& CONTACT INFO  &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
 
-   <footer class="contact-info">
+   <footer class="contact-info" id="contact">
 	   <div class="container">
 			<h2> Keep it in Touch! </h2>
 
@@ -299,6 +307,9 @@
 
 					<label for="email"> Email </label>
 					<input type="text" id="email" name="email" placeholder="Your email address..">
+
+					<label for="message"> Message </label>
+					<input type="text" id="message" name="message" placeholder="Your message..">
 
 
 					<input class="btn" type="submit" value="Submit">

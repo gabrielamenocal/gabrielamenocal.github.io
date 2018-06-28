@@ -67,12 +67,39 @@ header, footer {
 	background-color:#C96250;
 }
 
+header{
+	position: relative;
+}
+
 .center{	
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 30%;
 	/* height: 350;*/
+}
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Navigation Section &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+nav{
+	text-align: center;
+	position: fixed;
+	top: 0;
+	background-color: antiquewhite;
+	width: 100%;
+}
+
+nav a{
+	display: inline-block;
+	padding: 15px 20px;
+	color:#C96250;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Playfair Display', serif;
+}
+
+nav a :hover{
+	background-color: #262456;
 }
 
 
@@ -133,7 +160,7 @@ header h2 {
 		margin-bottom: 30px;
 	}
 
-	header{
+header{
 		color: whitesmoke;
 
 	}
@@ -151,7 +178,6 @@ header h2 {
 
 a:hoover{
 	text-decoration: #EE8E39;
-
 }
 
 img{
@@ -161,6 +187,24 @@ img{
 	padding: 10px;
 }
 
+.download{
+		border: 1px solid black;
+		border-radius: 10px;
+		text-decoration: none;
+		color: #ccc;
+		padding: 10px;
+		background-color: #262456;
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 10px;
+		margin-right: 10px;	
+	}
+
+#time{
+	align-content: flex-end;
+}
 
 /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& WORK EXPERIENCE &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
 
@@ -264,4 +308,7 @@ input[type=submit]:hover {
 	margin-bottom: 20px;
 }
 
+#message{
+	padding: 60px;
+}
 
